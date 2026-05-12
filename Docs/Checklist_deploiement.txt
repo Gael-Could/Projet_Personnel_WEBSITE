@@ -1,0 +1,63 @@
+Checklist pour le Déploiement de la RPL
+
+Suivez ces étapes demain pour garantir que votre site fonctionne parfaitement dès sa mise en ligne.
+
+1. Préparation de la Base de Données
+
+Sur votre ordinateur (XAMPP) :
+
+[ ] Allez dans phpMyAdmin.
+
+[ ] Sélectionnez la base rpl_db.
+
+[ ] Cliquez sur l'onglet "Exporter".
+
+[ ] Choisissez la méthode "Rapide" et le format "SQL", puis cliquez sur "Exporter". Vous obtiendrez un fichier .sql.
+
+2. Nettoyage du Code
+
+[ ] Liens internes : Vérifiez que tous vos liens pointent vers des fichiers .php (ex: archives.php) et non plus .html si vous avez dynamisé ces pages.
+
+[ ] Chemins : Assurez-vous que vous n'avez pas de liens "absolus" vers votre disque dur (ex: C:/xampp/...). Utilisez toujours des chemins relatifs (ex: images/logo.png).
+
+3. Configuration de la Connexion (Le plus important !)
+
+Sur le serveur distant, les identifiants de base de données changent souvent.
+
+[ ] Créez un fichier db_connect.php si ce n'est pas déjà fait.
+
+[ ] Préparez-vous à remplacer :
+
+$servername = "localhost"; (souvent identique)
+
+$username = "nom_utilisateur_fourni_par_hebergeur";
+
+$password = "mot_de_passe_fourni";
+
+$dbname = "nom_base_donnee_fourni";
+
+4. Transfert des Fichiers (FTP)
+
+[ ] Utilisez un logiciel comme FileZilla.
+
+[ ] Connectez-vous à votre hébergeur.
+
+[ ] Glissez le contenu de votre dossier C:\xampp\htdocs\Projet Web Roch\ vers le dossier public_html (ou www) de votre serveur.
+
+5. Importation sur le Serveur
+
+[ ] Connectez-vous au phpMyAdmin de votre hébergeur.
+
+[ ] Créez une nouvelle base de données (si ce n'est pas déjà fait).
+
+[ ] Cliquez sur "Importer" et sélectionnez le fichier .sql que vous avez exporté à l'étape 1.
+
+6. Tests Post-Déploiement
+
+[ ] Tester le formulaire de contact.
+
+[ ] Vérifier que la page archives.php affiche bien les articles.
+
+[ ] Vérifier l'affichage des images.
+
+[ ] HTTPS : Vérifiez que le cadenas est bien présent dans la barre d'adresse.

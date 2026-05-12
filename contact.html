@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Soumissions | RIPAC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700&family=Inter:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header (Composant de Navigation) -->
+    <!--<header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="bg-slate-900 p-1.5 rounded group-hover:bg-amber-700 transition-colors">
+                        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L5 12L20 19L35 12L20 5Z" stroke="white" stroke-width="2" />
+                            <path d="M5 20V28C5 28 10 32 20 32C30 32 35 28 35 28V20" stroke="white" stroke-width="2" />
+                            <path d="M20 19V32" stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold leading-none">RPL</h1>
+                        <p class="text-[9px] tracking-widest text-amber-700 font-bold uppercase">Libreville</p>
+                    </div>
+                </a>
+                <nav class="hidden md:flex gap-8 items-center text-xs font-bold uppercase tracking-widest">
+                    <a href="index.html" class="text-slate-600 hover:text-amber-700 transition">Accueil</a>
+                    <a href="archives.html" class="text-slate-600 hover:text-amber-700 transition">Archives</a>
+                    <a href="ethique.html" class="text-slate-600 hover:text-amber-700 transition">Éthique</a>
+                    <a href="contact.html" class="text-amber-700">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- PARTIE HAUTE : À placer juste après l'ouverture de la balise <body> -->
+    <!-- Note : Pour la page active, changez "text-slate-600" en "text-amber-700" sur le lien correspondant -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- LOGO : Lien vers l'accueil -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="bg-slate-900 p-1.5 rounded group-hover:bg-amber-700 transition-colors">
+                        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L5 12L20 19L35 12L20 5Z" stroke="white" stroke-width="2" />
+                            <path d="M5 20V28C5 28 10 32 20 32C30 32 35 28 35 28V20" stroke="white" stroke-width="2" />
+                            <path d="M20 19V32" stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold leading-none text-slate-900">RIPAC</h1>
+                        <p class="text-[9px] tracking-widest text-amber-700 font-bold uppercase">Revue Internationale de Philosophie Antique et Contemporaine</p>
+                    </div>
+                </a>
+
+                <!-- MENU DE NAVIGATION PRINCIPAL -->
+                <nav class="hidden md:flex gap-8 items-center text-xs font-bold uppercase tracking-widest">
+                    <a href="index.php" class="text-slate-600 hover:text-amber-700 transition">Accueil</a>
+                    <a href="archives.php" class="text-slate-600 hover:text-amber-700 transition">Archives</a>
+                    <a href="ethique.html" class="text-slate-600 hover:text-amber-700 transition">Éthique</a>
+                    <a href="contact.html"
+                        class="bg-slate-900 text-white px-4 py-2 rounded hover:bg-slate-800 transition">Contact</a>
+                </nav>
+
+                <!-- MENU MOBILE (Apparaît sur téléphone) -->
+                <div class="md:hidden text-slate-900 cursor-pointer">
+                    <i class="fas fa-bars text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-16 px-6">
+        <div class="grid lg:grid-cols-2 gap-16">
+
+            <!-- Colonne Info & Soumission -->
+            <div>
+                <h2 class="text-4xl font-bold serif italic mb-6">Contact & Secrétariat</h2>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    Pour toute question relative à la revue, aux abonnements institutionnels ou pour soumettre un
+                    manuscrit, veuillez utiliser les coordonnées ci-dessous ou le formulaire dédié.
+                </p>
+
+                <div class="space-y-6 mb-12">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 p-3 rounded text-amber-700">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Siège social</h4>
+                            <p class="text-sm text-slate-500">Département de Philosophie, Université Omar Bongo<br>BP
+                                17009, Libreville, Gabon</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 p-3 rounded text-amber-700">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Courriel</h4>
+                            <p class="text-sm text-slate-500">gaelpembe2019@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box Instructions Auteurs -->
+                <div class="bg-slate-900 text-white p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold serif italic mb-4">Note aux auteurs</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Les articles doivent être originaux (6 000 à 10 000 mots) et accompagnés d'un résumé en français
+                        et en anglais.
+                    </p>
+                    <a href="ethique.html"
+                        class="text-amber-500 text-xs font-bold uppercase tracking-widest hover:underline">Consulter la
+                        charte éthique →</a>
+                </div>
+            </div>
+
+            <!-- Formulaire de Contact -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <form action="traitement_contact.php" method="POST" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Nom
+                                complet</label>
+                            <input type="text" name="nom" required
+                                class="w-full bg-slate-50 border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Email</label>
+                            <input type="email" name="email" required
+                                class="w-full bg-slate-50 border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Objet du
+                            message</label>
+                        <select name="objet"
+                            class="w-full bg-slate-50 border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+                            <option>Demande d'information</option>
+                            <option>Soumission de manuscrit</option>
+                            <option>Devenir évaluateur</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Votre
+                            message</label>
+                        <textarea name="message" rows="6" required
+                            class="w-full bg-slate-50 border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-amber-500 outline-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-slate-900 text-white py-4 rounded-lg font-bold uppercase tracking-widest text-xs hover:bg-slate-800 transition">
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer (Composant standard) -->
+    <footer class="bg-slate-900 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <h5 class="serif italic text-xl mb-2">Revue Internationale de Philosophie Antique et Contemporaine</h5>
+                <p class="text-slate-500 text-sm">Université Omar Bongo — Département de Philosophie</p>
+            </div>
+
+            <form action="newsletter.php" method="POST" class="max-w-md mx-auto mb-10">
+                <p class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-4">Alertes Email</p>
+                <div class="flex">
+                    <input type="email" name="email" required placeholder="votre@email.com"
+                        class="bg-slate-800 border-none rounded-l px-4 py-2 w-full text-sm focus:ring-1 focus:ring-amber-500 outline-none">
+                    <button type="submit" class="bg-amber-700 px-6 py-2 rounded-r hover:bg-amber-800 transition">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div
+                class="flex justify-center gap-6 text-[10px] text-slate-500 uppercase tracking-widest border-t border-slate-800 pt-8 font-bold">
+                <a href="index.php" class="hover:text-white transition">Accueil</a>
+                <a href="ethique.html" class="hover:text-white transition">Éthique & Plagiat</a>
+                <a href="mentions_legales.html" class="hover:text-white transition">Mentions Légales</a>
+                <a href="plan.html" class="hover:text-white transition">Plan du site</a>
+            </div>
+            <p class="mt-8 text-[10px] text-slate-600">© 2026 RIPAC - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- PARTIE BASSE : À placer juste avant la fermeture de la balise </body> 
+    <footer class="bg-slate-900 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <h5 class="serif italic text-xl mb-2">Revue de Philosophie de Libreville</h5>
+                <p class="text-slate-500 text-sm">Université Omar Bongo — Département de Philosophie</p>
+            </div>
+
+            Système d'Abonnement Newsletter
+            <form action="newsletter.php" method="POST" class="max-w-md mx-auto mb-10">
+                <p class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-4">Suivre les parutions</p>
+                <div class="flex">
+                    <input type="email" name="email" required placeholder="votre@email.com"
+                        class="bg-slate-800 border-none rounded-l px-4 py-2 w-full text-sm focus:ring-1 focus:ring-amber-500 outline-none">
+                    <button type="submit" class="bg-amber-700 px-6 py-2 rounded-r hover:bg-amber-800 transition">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+
+            LIENS DE BAS DE PAGE
+            <div
+                class="flex justify-center gap-6 text-[10px] text-slate-500 uppercase tracking-widest border-t border-slate-800 pt-8 font-bold">
+                <a href="index.html" class="hover:text-white transition">Accueil</a>
+                <a href="ethique.html" class="hover:text-white transition">Éthique & Plagiat</a>
+                <a href="mentions-legales.html" class="hover:text-white transition">Mentions Légales</a>
+                <a href="plan.html" class="hover:text-white transition">Plan du site</a>
+            </div>
+
+            <p class="mt-8 text-[10px] text-slate-600">© 2026 RPL - Revue de Philosophie de Libreville. Tous droits
+                réservés.</p>
+        </div>
+    </footer>-->
+
+</body>
+
+</html>

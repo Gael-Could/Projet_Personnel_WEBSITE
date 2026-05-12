@@ -1,0 +1,63 @@
+Récapitulatif du Projet Web : Revue de Philosophie et Lettres (RPL)
+
+Ce document détaille l'architecture de votre application locale et le rôle de chaque composant pour assurer la pérennité de votre développement.
+
+1. Architecture des Fichiers
+
+Votre projet est situé dans C:\xampp\htdocs\Projet Web Roch\. Voici l'organisation recommandée :
+
+index.php : Page d'accueil dynamique (anciennement index.html). Elle affiche les derniers articles.
+
+archives.php : Page listant tous les articles stockés dans la table articles.
+
+contact.html : Le formulaire visuel où l'utilisateur saisit son message.
+
+traitement_contact.php : Le script invisible qui reçoit les données de contact et les enregistre dans la table contacts.
+
+db_connect.php (Optionnel mais recommandé) : Un fichier central pour gérer la connexion à rpl_db afin d'éviter de répéter le code de connexion dans chaque fichier.
+
+2. Schéma de la Base de Données (rpl_db)
+
+D'après vos captures d'écran (phpMyAdmin), votre base doit contenir ces deux tables :
+
+Table articles
+
+Sert à l'affichage des publications sur archives.php.
+
+id, titre, auteur, affiliation, volume, numero, annee, resume, contenu, mots_cles, pages, date_publication.
+
+Table contacts
+
+Sert à stocker les messages reçus via traitement_contact.php.
+
+id (INT, Primary Key, Auto-increment)
+
+nom (VARCHAR)
+
+email (VARCHAR)
+
+objet (VARCHAR)
+
+message (TEXT)
+
+date_envoi (TIMESTAMP)
+
+3. Flux de données d'un formulaire
+
+Saisie : L'utilisateur remplit contact.html.
+
+Envoi : Le bouton "Envoyer" pointe vers <form action="traitement_contact.php" method="POST">.
+
+Traitement : traitement_contact.php récupère les variables $_POST['nom'], etc.
+
+Action : Le script exécute une requête INSERT INTO.
+
+Feedback : Le script affiche le message de succès (Badge vert).
+
+4. Conseils pour la suite
+
+Extensions : Utilisez toujours .php pour les pages qui doivent afficher des données venant de la base (comme vos archives).
+
+URLs : Accédez toujours à votre site via http://localhost/Projet%20Web%20Roch/ et non en ouvrant le fichier directement depuis l'explorateur Windows.
+
+Sauvegarde : Exportez régulièrement votre base de données SQL depuis l'onglet "Exporter" de phpMyAdmin.

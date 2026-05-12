@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revue de Philosophie de Libreville | RPL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+
+        :root {
+            --primary: #1e293b;
+            --accent: #b45309;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.8));
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="bg-slate-900 p-1.5 rounded group-hover:bg-amber-700 transition-colors">
+                        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L5 12L20 19L35 12L20 5Z" stroke="white" stroke-width="2" />
+                            <path d="M5 20V28C5 28 10 32 20 32C30 32 35 28 35 28V20" stroke="white" stroke-width="2" />
+                            <path d="M20 19V32" stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold leading-none">RPL</h1>
+                        <p class="text-[9px] tracking-widest text-amber-700 font-bold uppercase">Libreville</p>
+                    </div>
+                </a>
+                <nav class="hidden md:flex gap-8 items-center text-xs font-bold uppercase tracking-widest">
+                    <a href="index.html" class="text-amber-700">Accueil</a>
+                    <a href="archives.php" class="text-slate-600 hover:text-amber-700 transition">Archives</a>
+                    <a href="ethique.html" class="text-slate-600 hover:text-amber-700 transition">Éthique</a>
+                    <a href="contact.html"
+                        class="bg-slate-900 text-white px-4 py-2 rounded hover:bg-slate-800 transition">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 py-32 text-white overflow-hidden">
+        <div
+            class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1500&q=80')] bg-cover bg-center">
+        </div>
+        <div class="relative max-w-5xl mx-auto px-4 text-center">
+            <span
+                class="inline-block bg-amber-700 text-[10px] font-bold uppercase tracking-[0.3em] px-4 py-1.5 rounded-full mb-8">Université
+                Omar Bongo</span>
+            <h2 class="text-5xl md:text-7xl font-bold serif italic mb-8 leading-tight">Penser la cité, éclairer l'humain
+            </h2>
+            <p class="text-xl text-slate-300 mb-12 font-light italic leading-relaxed max-w-3xl mx-auto">
+                Revue internationale de philosophie de Libreville (RPL). Un espace de rigueur scientifique dédié à
+                l'excellence académique sous la direction du Prof. Christ Olivier Mpaga.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="archives.php"
+                    class="bg-amber-700 hover:bg-amber-800 px-10 py-4 rounded font-bold transition flex items-center justify-center gap-3 text-sm uppercase tracking-widest">
+                    <i class="fas fa-book-open"></i> Explorer les Archives
+                </a>
+                <a href="contact.html"
+                    class="bg-white/10 hover:bg-white/20 backdrop-blur-md px-10 py-4 rounded font-bold transition flex items-center justify-center gap-3 text-sm uppercase tracking-widest border border-white/20">
+                    Soumettre un manuscrit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Mot du Directeur -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-slate-200 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+                            alt="Professeur"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-amber-700 text-white p-8 rounded-xl hidden md:block">
+                        <p class="serif italic text-2xl font-bold">"La philosophie n'est pas un luxe, c'est une
+                            nécessité."</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-amber-700 text-xs font-bold uppercase tracking-widest mb-4">Direction Scientifique
+                    </h3>
+                    <h2 class="text-4xl font-bold serif mb-6 italic">Le mot du Directeur de Publication</h2>
+                    <div class="prose prose-slate text-slate-600 space-y-4 leading-relaxed italic">
+                        <p>La <strong>Revue de Philosophie de Libreville</strong> s'est donnée pour mission d'être le
+                            carrefour des pensées critiques qui interrogent notre contemporanéité. Dans un monde en
+                            mutation, le Département de Philosophie de l'UOB réaffirme son engagement pour une recherche
+                            d'excellence.</p>
+                        <p>Nous accueillons des contributions originales qui, par leur rigueur méthodologique et leur
+                            profondeur spéculative, contribuent à l'avancement du savoir universel.</p>
+                        <p class="font-bold text-slate-900 not-italic mt-6">— Professeur Christ Olivier Mpaga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rubriques Scientifiques (Lien vers PHP) -->
+    <section class="py-24 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold serif mb-4 italic text-slate-900">Axes de Recherche & Rubriques</h3>
+                <div class="w-24 h-1 bg-amber-700 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Les liens pointent vers archives.php avec un paramètre de filtrage -->
+                <a href="archives.php?cat=recherche"
+                    class="bg-white p-10 rounded-2xl card-shadow border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center rounded-lg mb-6 group-hover:bg-amber-700 transition-colors">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h4 class="font-bold mb-4 uppercase text-sm tracking-widest text-slate-900">Articles de Recherche
+                    </h4>
+                    <p class="text-sm text-slate-500 font-light leading-relaxed italic">Études approfondies et
+                        contributions originales aux différents domaines de la philosophie.</p>
+                </a>
+
+                <a href="archives.php?cat=commentaires"
+                    class="bg-white p-10 rounded-2xl card-shadow border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center rounded-lg mb-6 group-hover:bg-amber-700 transition-colors">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h4 class="font-bold mb-4 uppercase text-sm tracking-widest text-slate-900">Commentaires & Exégèse
+                    </h4>
+                    <p class="text-sm text-slate-500 font-light leading-relaxed italic">Analyses critiques et
+                        commentaires de textes classiques ou contemporains.</p>
+                </a>
+
+                <a href="archives.php?cat=recensions"
+                    class="bg-white p-10 rounded-2xl card-shadow border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center rounded-lg mb-6 group-hover:bg-amber-700 transition-colors">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4 class="font-bold mb-4 uppercase text-sm tracking-widest text-slate-900">Recensions d'Ouvrages
+                    </h4>
+                    <p class="text-sm text-slate-500 font-light leading-relaxed italic">Notes de lecture et comptes
+                        rendus critiques des parutions récentes.</p>
+                </a>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="archives.php"
+                    class="text-amber-700 font-bold uppercase text-[10px] tracking-[0.2em] hover:underline">
+                    Voir toutes les rubriques <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    <footer class="bg-slate-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 mb-16 border-b border-slate-800 pb-16">
+                <div class="col-span-1">
+                    <h5 class="serif italic text-2xl mb-4 font-bold">RPL</h5>
+                    <p class="text-slate-500 text-sm leading-relaxed italic">
+                        Organe officiel de recherche du Département de Philosophie de l'Université Omar Bongo.
+                        Libreville, Gabon.
+                    </p>
+                </div>
+                <div>
+                    <h6 class="text-[10px] font-bold uppercase tracking-widest text-amber-500 mb-6">Navigation</h6>
+                    <ul class="space-y-3 text-sm text-slate-400 font-light">
+                        <li><a href="index.html" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="archives.php" class="hover:text-white transition">Archives</a></li>
+                        <li><a href="ethique.html" class="hover:text-white transition">Éthique & Plagiat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-[10px] font-bold uppercase tracking-widest text-amber-500 mb-6">Secrétariat</h6>
+                    <p class="text-sm text-slate-400 mb-2">BP 17009, Libreville</p>
+                    <p class="text-sm text-slate-400 italic">contact@revue-philosophie-libreville.com</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] text-slate-600 uppercase tracking-widest font-bold">© 2026 RPL - Tous droits
+                    réservés.</p>
+                <div class="flex gap-8 text-[10px] text-slate-500 uppercase tracking-widest font-bold">
+                    <a href="mentions-legales.html" class="hover:text-white transition">Mentions Légales</a>
+                    <a href="plan.html" class="hover:text-white transition">Plan du site</a>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12 border-b border-slate-800 pb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L5 12L20 19L35 12L20 5Z" stroke="#b45309" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 20V28C5 28 10 32 20 32C30 32 35 28 35 28V20" stroke="#b45309" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h5 class="text-xl font-bold italic serif">RPL</h5>
+                    </div>
+                    <p class="text-slate-400 text-sm font-light">
+                        Favoriser la diffusion de la pensée philosophique rigoureuse dans le contexte gabonais et
+                        international.
+                    </p>
+                </div>
+                <div>
+                    <h6 class="font-bold uppercase text-xs tracking-[0.2em] text-amber-500 mb-6">Navigation</h6>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li><button onclick="showPage('home')" class="hover:text-white transition">Accueil</button></li>
+                        <li><button onclick="showPage('about')" class="hover:text-white transition">La Revue</button>
+                        </li>
+                        <li><button onclick="showPage('archive')" class="hover:text-white transition">Numéros &
+                                Archives</button></li>
+                        <li><button onclick="showPage('submission')" class="hover:text-white transition">Soumettre un
+                                article</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-bold uppercase text-xs tracking-[0.2em] text-amber-500 mb-6">Partenaires</h6>
+                    <ul class="space-y-3 text-slate-400 text-sm font-light">
+                        <li>Université Omar Bongo (UOB)</li>
+                        <li>École Normale Supérieure (ENS)</li>
+                        <li>IRSH, Gabon</li>
+                        <li>ULB, Belgique</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-bold uppercase text-xs tracking-[0.2em] text-amber-500 mb-6">Abonnement</h6>
+                    <p class="text-sm text-slate-400 mb-4">Recevez les alertes pour chaque nouveau numéro.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Votre email"
+                            class="bg-slate-800 border-none rounded-l px-4 py-2 text-sm w-full focus:ring-1 focus:ring-amber-500">
+                        <button class="bg-amber-700 px-4 py-2 rounded-r hover:bg-amber-800"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] md:text-xs text-slate-500 uppercase tracking-widest font-bold">
+                <p>© 2026 Revue de Philosophie de Libreville - ISSN en attente</p>
+
+                <div class="flex gap-8">
+                    <a href="ethique.html" class="hover:text-white transition">Éthique & Plagiat</a>
+                    <a href="mentions-legales.html" class="hover:text-white transition">Mentions Légales</a>
+                    <a href="plan.html" class="hover:text-white transition">Plan du site</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
